@@ -57,8 +57,13 @@ var app = (function()
 
 	app.initialize = function()
 	{
+	    // App is started
 		document.addEventListener('deviceready', onDeviceReady, false);
+
+		// App is put on the background
 		document.addEventListener('pause', onAppToBackground, false);
+
+		// App is retrieved from the background
 		document.addEventListener('resume', onAppToForeground, false);
 	};
 
@@ -126,6 +131,7 @@ var app = (function()
 		startMonitoringAndRangingRegions(mRegions, onError);
 	}
 
+    // Start monitoring and raging each region
 	function startMonitoringAndRangingRegions(regions, errorCallback)
 	{
 		// Start monitoring and ranging regions.
@@ -135,6 +141,7 @@ var app = (function()
 		}
 	}
 
+    // Start monitoring and ranging a region
 	function startMonitoringAndRangingRegion(region, errorCallback)
 	{
 		// Create a region object.
