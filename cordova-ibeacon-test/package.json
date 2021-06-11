@@ -1,0 +1,35 @@
+{
+  "name": "com.furda.hello",
+  "displayName": "cordova-ibeacon-test",
+  "version": "1.0.0",
+  "description": "iBeacon cordova test app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Fernando Urdaneta",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "com.unarin.cordova.beacon": "git+https://github.com/petermetz/cordova-plugin-ibeacon.git",
+    "cordova-android": "^9.1.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-local-notification": "git+https://github.com/katzer/cordova-plugin-local-notifications.git",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "com.unarin.cordova.beacon": {},
+      "cordova-plugin-local-notification": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
